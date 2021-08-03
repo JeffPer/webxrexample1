@@ -19,7 +19,7 @@ function checkIfPointer() {
 }
 
 if('xr' in navigator) {
-    navigator.xr.isSessionSupported( 'immersive-vr' )
+    navigator.xr.isSessionSupported( 'immersive-AR' )
         .then(function (supported) {
             if (supported) {
                 global.deviceType = "XR";
